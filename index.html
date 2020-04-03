@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Pagina CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dibujos</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- As a heading -->
+            <div class="col">
+                <nav class="navbar navbar-dark bg-dark">
+                    <span class="navbar-brand mb-0 h1">Lienzo Web</span>
+                </nav>
+
+                <div class="row" style="margin-top:1em;">
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-header">
+                              Opciones
+                            </div>
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary btn-block" onclick="dibujoUno()">
+                                    Dibujo I
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block" onclick="dibujoDos()">
+                                  Dibujo II
+                              </button>
+                              <button type="button" class="btn btn-secondary btn-block" onclick="limpiar()">
+                                    Limpiar
+                                </button>
+                            </div>
+                          </div>                        
+                    </div>
+                    <div class="col-8">
+                        <div class="card">
+                            <div class="card-header">
+                              Lienzo
+                            </div>
+                            <div class="card-body">
+                              <div class="row justify-content-center">
+                                <canvas id="canvas" class="col-10 canvas-type"></canvas>                                    
+                              </div>
+                            </div>
+                          </div>                        
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/dibujo.js"></script>
+  </body>
+</html>
